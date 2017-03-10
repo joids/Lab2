@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 int money(int inp, int tm){
     int sum;
@@ -13,6 +13,23 @@ int money(int inp, int tm){
     }
     if ((tm > 241) && (tm < 365)){
         sum = inp + 0.12 * inp;
+    }
+    return sum;
+}
+
+int money2(int inp, int tm){
+        int sum;
+    if ((tm > 0) && (tm < 30)){
+        sum = inp - 0.1 * inp;
+    }
+    if ((tm > 30) && (tm < 120)){
+        sum = inp + 0.03 * inp;
+    }
+    if ((tm > 121) && (tm < 240)){
+        sum = inp + 0.08 * inp;
+    }
+    if ((tm > 241) && (tm < 365)){
+        sum = inp + 0.15 * inp;
     }
     return sum;
 }
