@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 
 int money(int inp, int tm){
     int sum;
