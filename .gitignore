@@ -1,0 +1,5 @@
+#dontcommit
+*.o
+*.txt
+!file.txt
+dir/*
