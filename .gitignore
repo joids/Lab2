@@ -1,5 +1,9 @@
-#dontcommit
 *.o
-*.txt
-!file.txt
-dir/*
+*.exe
+bin/*.exe
+build/src/*.o
+build/test/*.o
+
+.*.c.swp
+*.c~
+#*.c#
